@@ -36,5 +36,6 @@ def sameencode(message):
 
  wavef.close()
 if __name__ == '__main__':
+ print("Header format: ZCZC-ORG-EEE-PSSCCC+TTTT-JJJHHMM-LLLLLLLL-")
  headerinput = input("Enter message: ")  
  sameencode(headerinput)
