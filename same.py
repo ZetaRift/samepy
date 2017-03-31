@@ -15,14 +15,13 @@ def binencode(arg):
  return c
 
 
-if __name__ == '__main__':
- exampleheader = input("Enter message: ")  
- encodedheader = preamble + binencode(exampleheader)
+def sameencode(message):
+ encodedmessage = preamble + binencode(message)
  wavef = wave.open('same.wav', 'w')
  wavef.setnchannels(1)
  wavef.setsampwidth(2)
  wavef.setframerate(44100)
- for s in encodedheader:
+ for s in encodedmessage:
   sb = 0.0
   if s == "1":
    sb = highbit
@@ -36,3 +35,6 @@ if __name__ == '__main__':
    i+=1
 
  wavef.close()
+if __name__ == '__main__':
+ headerinput = input("Enter message: ")  
+ sameencode(headerinput)
