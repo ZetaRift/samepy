@@ -1,6 +1,6 @@
 # samepy
-A SAME encoder written in python
-
+A SAME encoder written in Python.
+When run, it writes an encoded message into a mono 16-bit 44.1kHz .wav file.
 
 ## What is SAME?
  SAME stands for Specific Area Message Encoding (see https://en.wikipedia.org/wiki/Specific_Area_Message_Encoding) that is used to encode messages in EAS and NWR transmissions. 
@@ -17,3 +17,4 @@ The text of the header is a fixed format:
 6. `TTTT` Purge time of the event, format is HHMM
 7. `JJJHHMM` Date and time of the event in UTC.
 8. `LLLLLLLL` Eight character station callsign.
+
